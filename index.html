@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>frontClients</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="none">Listado Clientes</h1>
+        <h2>Para iniciar agrega un nuevo cliente</h2>
+        <button class="btn-client" id="new-client" type="submit">Nuevo cliente</button>
+    </header>
+    <table class="table-container none"> 
+        <thead> 
+            <tr>  
+                <th>Nombre</th>  
+                <th>Teléfono</th>      
+                <th>Email</th>      
+                <th>Tipo de Plan</th>      
+                <th>Fecha creación</th>      
+                <th>Acciones</th>      
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"></script>
+    <script src="js/app.js" type="module" defer></script>
+</body>
+</html>

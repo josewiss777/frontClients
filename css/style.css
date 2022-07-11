@@ -1,0 +1,145 @@
+/* Universal */
+
+html {  
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Mukta', sans-serif;
+}
+img {   
+    max-width: 100%;
+    display: block;
+}
+
+/* Home Page */
+
+.header {
+    background-color: #0084ff;
+    text-align: center;
+    padding: 1.3rem 0;
+}
+.header h1,
+.header h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+}
+.btn-client {
+    background-color: transparent;
+    padding: 0.6rem;
+    margin: 0.5rem auto;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 10rem;
+}
+.btn-client:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Register Client-Modal */
+
+.divInputs input,
+.divInputs label {
+    display: block;
+    width: 100%; 
+    text-align: start;  
+    font-size: 0.8rem;
+}
+.divInputs input {
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    outline: none;
+    border: 0.5px solid #808080;
+    margin-bottom: 0.8rem;
+}
+.divRadio p {
+    display: block;
+    width: 100%; 
+    margin: 0;
+}
+.divRadio label {
+    font-size: 0.9rem;
+    padding-left: 0.1rem;
+    padding-right: 0.5rem;
+}
+
+/* Home Page - Table */
+
+.table-container {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+.table-container th {
+    padding: 0.7rem;
+    background-color: #00b4ff;
+    border-right: 0.5px solid #fff;
+    text-transform: uppercase;
+}
+.table-container td {
+    padding: 0.6rem;
+    border-bottom: 0.5px solid #808080;
+    text-align: center;
+    cursor: pointer;
+}
+.table-container tr:nth-child(even) {
+    background-color: #8080801c;
+}
+.edit,
+.delete {
+    display: inline-block;
+    height: 1.2rem;
+    padding: 0 0.5rem;
+}
+
+/* Classes for JS */
+
+.none {
+    display: none;
+}
+.footerAlert {
+    color: #ff0000;
+}
+
+/* REPONSIVE - Home Page - Table */
+
+@media(max-width: 980px) {
+    .table-container {
+        min-width: 35rem;
+        width: 35rem;
+    }
+    .table-container thead {
+        display: none;
+    }
+    .table-container tr {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1.5rem;
+    }
+    .table-container td:first-child {
+        text-transform: uppercase;
+        background: #8080801c;
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    .table-container tr:nth-child(even) {
+        background-color: unset;
+    }
+}
+@media(max-width: 610px) {
+    .table-container {
+        min-width: unset;
+        width: 90%;
+    }
+}
